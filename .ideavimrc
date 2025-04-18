@@ -1,0 +1,70 @@
+set nu
+set relativenumber
+
+set scrolloff=999
+set clipboard+=unnamedplus
+
+set which-key
+set ideajoin
+set surround
+set easymotio
+set multiple-cursors
+set highlightedyank
+set argtextobj
+set sneak
+set quickscope
+set switch
+set peekaboo
+set functiontextobj
+set commentary
+set mini-ai
+
+let mapleader = " "
+
+nmap <C-h> <action>(PreviousTab)
+nmap <C-l> <action>(NextTab)
+
+"nmap <leader>h <action>(PreviousTab)
+"nmap <leader>l <action>(NextTab)
+nmap <leader>bd <action>(CloseEditor)
+nmap <leader>i <action>(Generate)
+nmap <leader>m <action>(Git.Menu)
+nmap <leader>s <action>(QuickChangeScheme)
+nmap <leader>/ <action>(ShowErrorDescription)
+nmap <leader>e <action>(GotoNextError)
+nnoremap <leader><leader> <C-Tab>
+
+set notimeout
+
+set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
+
+map <leader>hs <Action>(ShowHarpoon)
+map <leader>ha <Action>(AddToHarpoon)
+map <leader>H1 <Action>(SetHarpoon1)
+map <leader>H2 <Action>(SetHarpoon2)
+map <leader>H3 <Action>(SetHarpoon3)
+map <leader>H4 <Action>(SetHarpoon4)
+map <leader>H5 <Action>(SetHarpoon5)
+map <leader>h1 <Action>(GotoHarpoon1)
+map <leader>h2 <Action>(GotoHarpoon2)
+map <leader>h3 <Action>(GotoHarpoon3)
+map <leader>h4 <Action>(GotoHarpoon4)
+map <leader>h5 <Action>(GotoHarpoon5)
+
+
+nmap <leader>bs <Action>(ShowBookmarks)
+nmap <leader>bt <Action>(ActivateBookmarksToolWindow)
+nmap <leader>bb <Action>(ToggleBookmark)
+nmap <leader>be <Action>(EditBookmark)
+nmap <leader>bp <Action>(GotoPreviousBookmark)
+nmap <leader>bn <Action>(GotoNextBookmark)
+let g:WhichKeyDesc_bookmarks = "<leader>b Bookmarks"
+let g:WhichKeyDesc_bookmarks_menu = "<leader>bm Bookmark Menu"
+let g:WhichKeyDesc_bookmarks_show = "<leader>bs Show Bookmarks"
+let g:WhichKeyDesc_bookmarks_tool = "<leader>bt Bookmark Tool"
+let g:WhichKeyDesc_bookmarks_toggle_bookmark = "<leader>bb Toggle Bookmark"
+let g:WhichKeyDesc_bookmarks_edit = "<leader>be Edit Bookmark"
+let g:WhichKeyDesc_bookmarks_prev = "<leader>bp Previous Bookmark"
+let g:WhichKeyDesc_bookmarks_next = "<leader>bn Next Bookmark"
